@@ -1,0 +1,95 @@
+/* FRAMEWORK */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    line-height: 3em;
+}
+header{
+    height: 80px;
+}
+section {
+    display: flex;
+    justify-content: center;
+    background: url("imgs/foodtable.jpeg") no-repeat left;
+    background-size: cover;
+    position: relative;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    transition: width 1s, height 1s;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background: #ccc;
+    width: 100%;
+    height: 80px;
+    padding: 1em;
+}
+header figure {
+    width: 5em;
+    height: 3em;
+    margin: 0 1em;
+}
+main {
+    width: 50vw;
+    height: 100vh;
+    overflow: scroll;
+    transition: width 1s, height 1s;
+}
+main p {padding: 0 2em; line-height: 2em}
+article, form {margin: 2em 0;}
+figure{
+     float: left;
+    width: 10em;
+    height: 10em;
+     background-size: cover;
+    margin: 1em;
+}
+figure:nth-of-type(1) {
+    background: url(imgs/dumplings.jpeg) no-repeat;
+}
+figure:nth-of-type(2) {
+    background: url(imgs/fried-rice.jpeg) no-repeat;
+}
+figure:nth-of-type(3) {
+    background: url(imgs/cookies.jpeg) no-repeat;
+}
+header, footer {background: #ccc;padding: 1.5rem;}
+form {
+    clear: both;
+    margin: 2em;
+}
+input[type="checkbox"] {
+    
+}
+
+
+
+#entrees{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 800px) {
+    body {flex-direction: column;}
+    section, main {width: 100vw;}
+    section {
+        height: 40vh;
+        background-attachment: fixed;
+    }
+    main {overflow: visible;height: auto;}
+}
+@media only screen and (max-width: 550px) {
+    section {height: 30vh;background-attachment: scroll;}
+}

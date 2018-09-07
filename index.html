@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <section>
+        <nav>
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+        </nav>
+    </section>
+    <main>
+        <header>
+            <h1>Chinese Resturant</h1>
+        </header>
+        <article>
+            <figure>
+            </figure>
+            <h2>Appetizers</h2>
+            <p>
+                <strong>$3.99 Dumplings</strong> - Bite-sized, hand-torn pieces of dough are cooked in boiling chicken broth <br>
+                <strong>$2.99 Eggrolls</strong> - Savory roll with shredded cabbage, chopped pork, and other fillings inside a thickly-wrapped wheat flour skin
+                <br>
+                <strong>$5.99 Chicken Wings</strong> - With House or BBQ sauce
+            </p>
+        </article>
+        <article>
+            <figure></figure>
+            <h2>Entrees</h2>
+            <p>
+                <strong>$11.99 Stir Fry Rice</strong> - Vegetable mixed with fried rice and your choice of meats <br>
+                <strong>$12.99 Chow Mein</strong> - Savory roll with shredded cabbage, chopped pork, and other fillings inside a thickly-wrapped wheat flour skin
+                <br>
+            </p>
+        </article>
+        <article>
+            <figure></figure>
+            <h2>Deserts</h2>
+            <p>
+                <strong>$2.99 Pound Cake</strong> - Homemade pound cake
+                <br>
+                <strong>$1.99  Cookies</strong> - Fresh Baked Chocolate chip cookies
+            </p>
+        </article>
+        <form>
+            <fieldset id='appetizers'>
+                <legend>Appetizers</legend>
+
+                <label for='dumplings'>Dumplings</label>
+                <input type="number" placeholder="Enter Quantity"><br>
+
+                <label for='eggrolls'>Egg Rolls</label>
+                <input type="number" placeholder="Enter Quantity"><br>
+
+                <label for='dumplings'>Chicken Wings</label>
+                <input type="number" placeholder="Enter Quantity">
+            </fieldset>
+
+            <fieldset id="entrees">
+                <legend>Entrees</legend>
+                <div>
+                    <label for='fried-rice'>Stir Fried Rice</label>
+                    <input type="number" placeholder="Enter Quantity">
+                    
+                    <label for="chicken">Chicken</label>
+                    <input type="radio" name="entreeItems" value="chicken">
+
+                   <label for="beef">Beef</label>
+                    <input type="radio" name="entreeItems" value="beef">
+
+                   <label for="shrimp">Shrimp</label>
+                    <input type="radio" name="entreeItems" value="shrimp">
+                </div>
+                <div>
+
+                   <label for='chow-mein'>Stir Fried Rice</label>
+                    <input type="number" placeholder="Enter Quantity">
+                    
+                    <label for="chicken">Chicken</label>
+                    <input type="radio" name="entreeItems" value="chicken">
+
+                   <label for="beef">Beef</label>
+                    <input type="radio" name="entreeItems" value="beef">
+
+                   <label for="shrimp">Shrimp</label>
+                    <input type="radio" name="entreeItems" value="shrimp">
+                </div>
+
+            </fieldset>
+
+            <fieldset id="deserts">
+                <legend>Deserts</legend>
+                <label for="cake">Pound Cake</label>
+                <input type="checkbox" name="desert1" value="Desert 1">
+                
+                <label for="cookies">Cookies</label>
+                <input type="checkbox" name="desert2" value="Desert 2">
+                
+            </fieldset>
+
+            <fieldset id="custumer-info">
+                <legend>Contact Information</legend>
+                <input type="text" name="firstName" placeholder="First Name">
+                <input type="text" name="lastName" placeholder="Last Name">
+                <br>
+                <input type="text" name="streetAddress" placeholder="Street Address">
+                <input type="text" name="city" placeholder="City">
+                <input type="text" name="zipCode" placeholder="Zip Code">
+                <br>
+                <input type="tel" name="custTel" placeholder="Phone Number">
+                <input type="email" name="custEmail" placeholder="youremail@email.com">
+            </fieldset>
+            <input type="submit" value="Place Order">
+        </form>
+        <br>
+        <footer>
+            <p>&copy; 2018 Footer</p>
+        </footer>
+    </main>
+</body>
+
+</html>
